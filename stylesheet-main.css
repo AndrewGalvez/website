@@ -2,11 +2,29 @@ html {
   background-color: rgb(50,50,50);
 }
 
-text {
-  font-size: 16px;
-  overflow-wrap: break-word;
-  text-wrap: break-word;
-  hyphens: auto;
+#header {
+  justify-content: center;
+  display: flex;
+  width: 80%;
+  background-color: white;
+  border-radius: 25px;
+  border: 5px solid black;
+  margin: auto;
+  margin-top: 15px;
+}
+
+#feedback-p-wrapper {
+  background-color: white;
+  margin: auto;
+  padding: 5px;
+  border-radius: 20px;
+  border: 5px solid black;
+  margin-top: 10px;
+} 
+
+p {
+  text-wrap: breakword;
+  font-size: 24px;
 }
 
 @keyframes slideInFromLeft {
@@ -16,10 +34,9 @@ text {
 
 .game-boxes-wrapper {
   transform: translateX(-100%);
-  display: flex;
+  display: block;
   flex-wrap: wrap;
-  animation: slideInFromLeft 5s forwards;
-  animation-delay: 1s;
+  animation: slideInFromLeft 3s forwards ease-in-out;
   position: relative;
 }
 
@@ -30,15 +47,15 @@ text {
   background-color: grey;
   display: flex;
   border-radius: 25px;
-  transition: transform 0.2s, box-shadow 0.4s, margin-top 0.2s;
+  transition: transform 1s ease, background-color 1s ease;
+  font-size: 24px;
+  width: 80%;
 }
 
 .game-box:hover {
-  transform: translate(-5px, -5px);
-  box-shadow: 5px 5px 0px 0px black;
-  margin-top: 10px;
+  transform: translateX(5%);
+  background-color: darkgrey;
 }
-
 
 .game-box-img {
   overflow: hidden;
@@ -48,6 +65,11 @@ text {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  transition: border-radius 1s;
+}
+
+.game-box-img:hover {
+  border-radius: 0%;
 }
 
 .game-box-img > img {

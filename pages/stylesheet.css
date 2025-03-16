@@ -2,9 +2,12 @@
   display: flex;
 }
 
-
-text {
+* {
   font-size: 24px;
+}
+
+h1 {
+  font-size: 32px;
 }
 
 .bar {
