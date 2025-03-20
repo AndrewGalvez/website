@@ -34,10 +34,9 @@ p {
 
 .game-boxes-wrapper {
   transform: translateX(-100%);
-  display: block;
-  flex-wrap: wrap;
   animation: slideInFromLeft 3s forwards ease-in-out;
   position: relative;
+  display: block;
 }
 
 .game-box {
@@ -45,11 +44,11 @@ p {
   padding: 10px;
   border: 5px solid black;
   background-color: grey;
-  display: flex;
   border-radius: 25px;
   transition: transform 1s ease, background-color 1s ease;
   font-size: 24px;
   width: 80%;
+  display: flex;
 }
 
 .game-box:hover {
@@ -57,15 +56,14 @@ p {
   background-color: darkgrey;
 }
 
-.game-box-img {
+.game-box-img { 
   overflow: hidden;
-  margin: 5px;
   border: 5px solid black;
   background-color: black;
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  transition: border-radius 1s;
+  transition: border-radius 0.4s ease;
 }
 
 .game-box-img:hover {
@@ -77,20 +75,48 @@ p {
 }
 
 .game-box-desc {
-  margin: 5px; 
+  margin-top: 10px;
+  margin-left: 2%;
+  display: flex;
 }
 
-.game-box-desc text {
+.game-box-desc > p {
   font-size: 24px;
 }
 
-button {
-  transition: margin 1s, scale 1s;
-  position: relative;
+.header {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 15px;
 }
 
-button:hover {
-  margin: 10px;
+.title-text {
+  width: 70%;
+  justify-contents: center;
+  display: flex;
+  background-color: green;
+  border: 8px solid darkgreen;
+  font-size: 18px;
+  border-radius: 25px;
+}
+
+.title-text > h1 {
+  margin: auto;
+}
+
+.feedback-button {
+   width: 30%; 
+}
+
+.feedback-button > a > button {
+  left: 70%;
+  font-size: 16px;
+  position: relative;
+  transition: left 1s ease, margin-top 1s ease, margin-bottom 1s ease, scale 1s ease;
+}
+
+.feedback-button > a > button:hover {
+  margin-bottom: 10px;
+  left: 60%;
   scale: 1.5;
 }
-
