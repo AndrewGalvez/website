@@ -1,5 +1,5 @@
 html {
-  background-color: rgb(50,50,50);
+  background-color: #191724;
 }
 
 #header {
@@ -43,7 +43,7 @@ p {
   margin: 5px;
   padding: 10px;
   border: 5px solid black;
-  background-color: grey;
+  background-color: #26233a;
   border-radius: 25px;
   transition: transform 1s ease, background-color 1s ease;
   font-size: 24px;
@@ -53,12 +53,12 @@ p {
 
 .game-box:hover {
   transform: translateX(5%);
-  background-color: darkgrey;
+  background-color: #6e6a86;
 }
 
 .game-box-img { 
   overflow: hidden;
-  border: 5px solid black;
+  border: 5px solid #f6c177;
   background-color: black;
   width: 100px;
   height: 100px;
@@ -82,6 +82,10 @@ p {
 
 .game-box-desc > p {
   font-size: 24px;
+}
+
+.game-box-desc > p > a {
+  color: #e0def4;
 }
 
 .header {
