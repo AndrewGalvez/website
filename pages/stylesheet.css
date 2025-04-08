@@ -8,6 +8,7 @@
 
 h1 {
   font-size: 32px;
+  color: #31748f;
 }
 
 .bar {
@@ -15,68 +16,84 @@ h1 {
   padding: 5px;
   border: 5px solid black;
   border-radius: 25px;
-  background-color: grey;
+  background-color: #1f1d2e;
 }
 
-.bar text {
-  font-size: 16px;
+.bar p {
   margin-left: 25px;
+  color: #e0def4;
 }
 
 html {
-  background-color: rgb(50,50,50);
+  background-color: #191724;
 }
 
 .game-box {
   margin: 25px;
   padding: 5px;
-  background-color: darkgrey;
+  background-color: #26233a;
   border: 5px solid black;
   border-radius: 25px;
   padding-left: 20px;
   display: flex;
+  transition: background-color 1s ease;
 }
 
-.game-box-img {
-  margin: 5px;
-  border: 5px solid black;
+.game-box:hover {
+  background-color: #6e6a86;
+}
+.game-box-img { 
+  overflow: hidden;
+  border: 5px solid #f6c177;
+  background-color: black;
   width: 100px;
   height: 100px;
-  padding: 0;
+  border-radius: 50%;
+  transition: border-radius 0.4s ease;
+  margin: 5px;
+}
+
+.game-box-img:hover {
+  border-radius: 0%;
+}
+
+.game-box-img > img {
+  scale: 0.8;
 }
 
 .game-box-text {
   margin: 5px;
   padding: 5px;
   font-size: 24px;
+  width: calc(100% - 150px);
+  color: #9ccfd8;
 }
 
 .download-box, .in-browser-box {
   margin: 25px;
-  border: 5px solid black;
   padding: 10px;
-  background-color: darkgrey;
+  border: 5px solid #eb6f92;
   border-radius: 25px;
-  margin-left: 2px;
-  margin-right: 2px;
-  width: 50%;
+  background-color: #26233a;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  width: 45%;
 }
 
-.download-box-sub text, .in-browser-box text {
+.download-box-sub p, .in-browser-box p {
   font-size: 20px;
+  color: #e0def4;
 }
 
 .download-box-title, .in-browser-box-title {
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid #f6c177;
   margin-bottom: 10px;
-}
-
-.download-box-title text, .in-browser-box-title text {
-  font-size: 24px;
+  color: #e0def4;
+  font-size: 20px;
 }
 
 .download-box-sub {
-  background-color: grey;
+  background-color: #908caa;
   margin-bottom: 2px;
   margin-top: 2px;
   padding: 4px;
